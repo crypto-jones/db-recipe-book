@@ -2,12 +2,12 @@ const express = require('express');
 const helmet = require('helmet');
 const PORT = process.env.PORT || 8000;
 const server = express();
-// const cohortRoutes = require('./routes/cohortRoutes');
+const dishRoutes = require('./routes/dishRoutes');
 
 server.use(express.json());
 server.use(helmet());
 
-// server.use('/api/cohorts', cohortRoutes);
+server.use('/api/dishes', dishRoutes);
 
 server.get('/', (req, res) => {
   res.send('API SANITY CHECK');

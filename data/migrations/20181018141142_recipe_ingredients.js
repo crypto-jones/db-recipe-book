@@ -10,6 +10,13 @@ exports.up = function(knex, Promise) {
       .unsigned()
       .references('id')
       .inTable('ingredients');
+
+    tbl
+      .integer('ingredient_id')
+      .notNullable()
+      .unsigned()
+      .references('id')
+      .inTable('ingredients');
   });
 };
 

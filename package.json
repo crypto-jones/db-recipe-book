@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/crypto-jones/db-recipe-book#readme",
   "dependencies": {
-    "knex": "^0.15.2"
+    "knex": "^0.15.2",
+    "sqlite3": "^4.0.2"
   }
 }
